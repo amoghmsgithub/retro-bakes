@@ -1,0 +1,114 @@
+{
+  "theme": "dark",
+  "archetype": "5",
+  "archetype_name": "Jewel & Luxury",
+  "design_philosophy": "A premium, Instagram-worthy modern dessert cafe aesthetic blending dark luxury with warm, inviting pastel and cream highlights. The design relies on glassmorphism surfaces, elegant typography, high-contrast imagery, and soft glowing ambient lighting to create a 'Starbucks Reserve' level of sophistication.",
+  "colors": {
+    "background_primary": "#0F0C0B",
+    "background_secondary": "#1A1514",
+    "surface_glass": "rgba(255, 255, 255, 0.03)",
+    "surface_glass_hover": "rgba(255, 255, 255, 0.06)",
+    "border_glass": "rgba(255, 255, 255, 0.08)",
+    "primary_accent": "#C7A17A",
+    "primary_accent_hover": "#B38F66",
+    "secondary_accent": "#E39A52",
+    "text_primary": "#FDFBF7",
+    "text_secondary": "#A39B98",
+    "text_highlight": "#F6E9D7"
+  },
+  "typography": {
+    "headings_font": "Playfair Display, serif",
+    "body_font": "Outfit, sans-serif",
+    "scale": {
+      "h1": "text-5xl md:text-6xl tracking-tight leading-none font-medium",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight font-medium",
+      "h3": "text-2xl md:text-3xl tracking-tight leading-snug font-medium",
+      "body_lg": "text-lg md:text-xl leading-relaxed text-secondary",
+      "body": "text-base leading-relaxed text-secondary",
+      "overline": "text-xs md:text-sm tracking-[0.2em] uppercase font-bold text-primary_accent"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "gap_large": "gap-12 md:gap-16",
+    "gap_medium": "gap-6 md:gap-8",
+    "border_radius": {
+      "cards": "rounded-2xl",
+      "buttons": "rounded-full",
+      "images": "rounded-3xl"
+    },
+    "grid_strategies": {
+      "featured": "grid-cols-1 md:grid-cols-2 lg:grid-cols-4",
+      "gallery": "bento grid with varying spans (col-span-2 row-span-2, col-span-1 row-span-1)"
+    }
+  },
+  "surfaces_and_effects": {
+    "glassmorphism": "backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "button_primary": "bg-[#C7A17A] text-[#0F0C0B] hover:bg-[#B38F66] transition-all duration-300 font-medium",
+    "button_secondary": "bg-transparent border border-[#C7A17A] text-[#C7A17A] hover:bg-[#C7A17A]/10 transition-all duration-300",
+    "glow_effect": "shadow-[0_0_30px_rgba(199,161,122,0.15)]",
+    "hover_lift": "hover:-translate-y-2 transition-transform duration-500"
+  },
+  "animations": {
+    "scroll_reveal": "framer-motion initial opacity-0 translate-y-8, whileInView opacity-100 translate-y-0",
+    "parallax": "react-scroll-parallax or framer-motion useScroll for background elements",
+    "micro_interactions": "scale-105 on image hover, soft glow intensity increase on card hover"
+  },
+  "components_strategy": {
+    "header": "Sticky glassmorphism nav (z-50) with transparent background at top, blurring on scroll.",
+    "hero": "Dark bakery interior background with heavy overlay (bg-black/60). Large Playfair Display heading. Floating glassmorphism 4.8 rating badge.",
+    "featured_desserts": "Cards using glassmorphism, high quality images, elegant typography for names, subtle add to cart/order interaction.",
+    "customer_reviews": "Horizontal scroll or bento grid of glass cards. Gold star icons.",
+    "instagram_gallery": "Tight bento grid (gap-2 or gap-4) of square/tall dessert images. Hover reveals Instagram icon and likes overlay.",
+    "custom_cakes_booking": "Split layout: Image on one side, elegant text and primary CTA on the other. CTA triggers Shadcn Dialog/Modal for Enquiry Form.",
+    "enquiry_form": "Shadcn Form inside Dialog. Styled inputs with bg-white/5, border-white/10, focus:border-primary_accent.",
+    "store_visit": "Google Maps embed with grayscale/dark mode CSS filter. Contact details stacked elegantly.",
+    "floating_whatsapp": "Fixed bottom-right button, glowing green or gold accent, pulsing animation."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1714328864044-9b3af0a6b48b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxkYXJrJTIwbHV4dXJ5JTIwYmFrZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzc4MTcwNzA2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Dark luxury bakery interior with ambient hanging lights"
+    },
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1776267074159-6245a4ec670c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbHV4dXJ5JTIwYmFrZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzc4MTcwNzA2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Interior of a bakery with display cases"
+    },
+    "dessert_blueberry_cheesecake": {
+      "url": "https://images.unsplash.com/photo-1773620496695-73c2086abf39?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwc2xpY2UlMjBkZXNzZXJ0JTIwY2FrZXxlbnwwfHx8fDE3NzgxNzA3MDZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Layered cheesecake with blueberries"
+    },
+    "dessert_chocolate_cake": {
+      "url": "https://images.unsplash.com/photo-1774119633885-ed59d028e3c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwc2xpY2UlMjBkZXNzZXJ0JTIwY2FrZXxlbnwwfHx8fDE3NzgxNzA3MDZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Gourmet chocolate and orange dessert"
+    },
+    "dessert_rasmalai_matcha": {
+      "url": "https://images.unsplash.com/photo-1759324351433-c5a1063f8ac6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwc2xpY2UlMjBkZXNzZXJ0JTIwY2FrZXxlbnwwfHx8fDE3NzgxNzA3MDZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Matcha/Pistachio layered cake dessert"
+    },
+    "dessert_strawberry": {
+      "url": "https://images.unsplash.com/photo-1777630321592-6e0f3e3c4f41?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwc2xpY2UlMjBkZXNzZXJ0JTIwY2FrZXxlbnwwfHx8fDE3NzgxNzA3MDZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Strawberry cake"
+    },
+    "custom_cake_1": {
+      "url": "https://images.unsplash.com/photo-1775830154800-2b5c539c7fd3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwY3VzdG9tJTIwYmlydGhkYXklMjBjYWtlfGVufDB8fHx8MTc3ODE3MDcwNnww&ixlib=rb-4.1.0&q=85",
+      "description": "Elegant custom anniversary/birthday cake"
+    },
+    "gallery_cake_setup": {
+      "url": "https://images.unsplash.com/photo-1726828952313-385d63df2514?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwY3VzdG9tJTIwYmlydGhkYXklMjBjYWtlfGVufDB8fHx8MTc3ODE3MDcwNnww&ixlib=rb-4.1.0&q=85",
+      "description": "Table topped with cakes and cupcakes"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, lucide-react.",
+    "Configure Tailwind CSS to include the custom colors (background_primary, primary_accent, etc.) and fonts (Playfair Display, Outfit).",
+    "Use Shadcn Dialog and Form components for the 'Book Your Cake' enquiry form.",
+    "Implement a mobile-first sticky navigation bar and a floating WhatsApp button.",
+    "Apply smooth scroll reveal animations (fade in, slide up) to sections using framer-motion.",
+    "Ensure the map embed matches the dark theme (use CSS filters like invert(90%) hue-rotate(180deg) or a custom map styling).",
+    "DO NOT use Inter font. Ensure headings are Playfair Display.",
+    "Use the exact image URLs provided in the media section for their respective components.",
+    "Add data-testid attributes to all interactive elements."
+  ]
+}
